@@ -1,207 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Responsive Design using Bootstrap</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
 </head>
+
 <body>
- 
+
 
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="animals.html">Interesting Animals</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-           <li class="nav-item"> <a class="nav-link active " href="plane.html">Plane</a></li>
+      <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link active " href="plane.html">Plane</a></li>
           <li class="nav-item"><a class="nav-link active" href="train.html">Train</a></li>
-          </ul>
-        </div>
-      </nav>
-      <br>
-
-    </div>  
-
-
-
-
-    <h1>Animals by Maneesh Devanaboyina</h1>
-   
-    <p>The 6 Letters from my last name are D,E,V,A,N,A</p>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2">D</div>   
-            <div class="col-sm-2">E</div>
-            <div class="col-sm-2">V</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">N</div>
-            <div class="col-sm-2">A</div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md">Dog</div>
-            <div class="col-md">Elephant</div>
-            <div class="col-md">Vervet Monkey</div>
-            <div class="col-md">Albatross</div>
-            <div class="col-md">Newt</div>
-            <div class="col-md">Alpaca</div>
-        </div>
-    
-    </div>
-    
-    <p>The row with animal names breaks into horizontal first.</p>
-
-    <p>The above effect happens because the grid systems of letters class is 
-        <b>.col-sm- Small (>=576 px)</b> and animals class is <b>.col-md- Medium (>=768 px)</b>. 
-         The grid layout of the letter class is so small, the letter components remain horizontal, the animal elements become vertical when the screen size reduces to 768px.</p>
-
-
-         <div class="container">
-          <img src="Alpaca.jpg" class="img-fluiod" alt="Alpaca"
-          width="450">
-      
-          <img src="Albatross.jpg" class="img-fluid" alt="Albatross"
-          height="400"
-          width="400">
-          
-          <img src="Newt.jpg" class="img-fluid" alt="Newt"
-          height="400"
-          width="400">
-      
+        </ul>
       </div>
-      <br>
-      
-      <div class="container">
-               
-          <img src="Alpaca.jpg" class="img-thumbnail" alt="Alpaca" width="150px">
-          <img src="Albatross.jpg" class="img-thumbnail" alt="Albatross" width="150px">
-          <img src="Newt.jpg" class="img-thumbnail" alt="Newt" width="150px">
-        
-      </div>
-      <br>
+  </nav>
+  <br>
 
-      <table class="table table-success table-striped table-bordered table-hover table-secondary">
-        <caption>Representing table showing the animal city and car name</caption>
-        <thead>
-          <tr>
-              <th scope="col">Letters</th>
-              <th class="table-danger" scope="col">Animal</th>
-              <th class="table-secondary" scope="col">City</th>
-              <th class="table-info" scope="col">Car</th>
-              
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <th class="table-default" scope="row">D</th>
-              <td class="table-danger">Dog</td>
-              <td class="table-secondary">Dubai</td>
-              <td class="table-info">Datsun</td>
-          </tr>
-          <tr>
-              <th scope="row">E</th>
-              <td class="table-danger"> Elephant</td>
-              <td class="table-secondary">England</td>
-              <td class="table-info">Elantra</td>
-          </tr>
-          <tr>
-              <th scope="row">V</th>
-              <td class="table-danger">Vervet Monkey</td>
-              <td class="table-secondary">Venice</td>
-              <td class="table-info">Volkswagen</td>
-          </tr>
-          <tr >
-              <th scope="row">A</th>
-              <td class="table-danger">Albatross</td>
-              <td class="table-secondary">Australia</td>
-              <td class="table-info">Alfa Romeo</td>
-          </tr>
-          <tr>
-              <th scope="row">N</th>
-              <td class="table-danger">Newt</td>
-              <td class="table-secondary">Newzealand</td>
-              <td class="table-info">Nissan</td>
-          </tr>
-          <tr>
-              <th scope="row">A</th>
-              <td class="table-danger">Alpaca</td>
-              <td class="table-secondary">Armenia</td>
-              <td class="table-info">Acura</td>
-          </tr>
-      </tbody>
-      </table>
+  </div>
 
-      <div>
-        <button type="button" class="btn btn-outline-primary ">D</button>
-        <button type="button" class="btn btn-outline-primary ">E</button>
-        <button type="button" class="btn btn-outline-primary" >V</button>
-        <button type="button" class="btn btn-outline-primary">A</button>
-        <button type="button" class="btn btn-outline-primary">N</button>
-        <button type="button" class="btn btn-outline-primary">A</button>
-    </div>
-    <br>
-    <div class="btn-toolbar" role="group" aria-label="success button group">
-        <button type="button" class="btn btn-success">D</button>
-        <button type="button" class="btn btn-success">E</button>
-        <button type="button" class="btn btn-success">V</button>
-    </div>
-    <div class="btn-toolbar" role="group" aria-label="warning button group">
-        <button type="button" class="btn btn-warning">A</button>
-        <button type="button" class="btn btn-warning">N</button>
-    </div>
-    <div class="btn-toolbar"  role="group" aria-label="danger button group">
-        <button type="button" class="btn btn-danger">A</button>
 
-    </div>
-    </div>
-    <br>
 
-    <div class="dropdown">
-      <button type="button" class="btn btn-primary active dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="true">Select Button</button>
-      <div class="dropdown-menu ">
-        <a class="dropdown-item "href="plane.html">Plane Page</a>
-        <a class="dropdown-item "href="train.html">Train page</a>
-      </div>
+
+  <h1>Animals by Maneesh Devanaboyina</h1>
+
+  <p>The 6 Letters from my last name are D,E,V,A,N,A</p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">D</div>
+      <div class="col-sm-2">E</div>
+      <div class="col-sm-2">V</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">N</div>
+      <div class="col-sm-2">A</div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>      
+    <div class="row">
+      <div class="col-md">Dog</div>
+      <div class="col-md">Elephant</div>
+      <div class="col-md">Vervet Monkey</div>
+      <div class="col-md">Albatross</div>
+      <div class="col-md">Newt</div>
+      <div class="col-md">Alpaca</div>
+    </div>
 
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We want this to accept an email address</div>
-      </div>
-      
+  </div>
+
+  <p>The row with animal names breaks into horizontal first.</p>
+
+  <p>The above effect happens because the grid systems of letters class is
+    <b>.col-sm- Small (>=576 px)</b> and animals class is <b>.col-md- Medium (>=768 px)</b>.
+    The grid layout of the letter class is so small, the letter components remain horizontal, the animal elements become
+    vertical when the screen size reduces to 768px.
+  </p>
+
+
+  <div class="container">
+    <img src="Alpaca.jpg" class="img-fluiod" alt="Alpaca" width="450">
+
+    <img src="Albatross.jpg" class="img-fluid" alt="Albatross" height="400" width="400">
+
+    <img src="Newt.jpg" class="img-fluid" alt="Newt" height="400" width="400">
+
+  </div>
+  <br>
+
+  <div class="container">
+
+    <img src="Alpaca.jpg" class="img-thumbnail" alt="Alpaca" width="150px">
+    <img src="Albatross.jpg" class="img-thumbnail" alt="Albatross" width="150px">
+    <img src="Newt.jpg" class="img-thumbnail" alt="Newt" width="150px">
+
+  </div>
+  <br>
+
+  <table class="table table-success table-striped table-bordered table-hover table-secondary">
+    <caption>Representing table showing the animal city and car name</caption>
+    <thead>
+      <tr>
+        <th scope="col">Letters</th>
+        <th class="table-danger" scope="col">Animal</th>
+        <th class="table-secondary" scope="col">City</th>
+        <th class="table-info" scope="col">Car</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="table-default" scope="row">D</th>
+        <td class="table-danger">Dog</td>
+        <td class="table-secondary">Dubai</td>
+        <td class="table-info">Datsun</td>
+      </tr>
+      <tr>
+        <th scope="row">E</th>
+        <td class="table-danger"> Elephant</td>
+        <td class="table-secondary">England</td>
+        <td class="table-info">Elantra</td>
+      </tr>
+      <tr>
+        <th scope="row">V</th>
+        <td class="table-danger">Vervet Monkey</td>
+        <td class="table-secondary">Venice</td>
+        <td class="table-info">Volkswagen</td>
+      </tr>
+      <tr>
+        <th scope="row">A</th>
+        <td class="table-danger">Albatross</td>
+        <td class="table-secondary">Australia</td>
+        <td class="table-info">Alfa Romeo</td>
+      </tr>
+      <tr>
+        <th scope="row">N</th>
+        <td class="table-danger">Newt</td>
+        <td class="table-secondary">Newzealand</td>
+        <td class="table-info">Nissan</td>
+      </tr>
+      <tr>
+        <th scope="row">A</th>
+        <td class="table-danger">Alpaca</td>
+        <td class="table-secondary">Armenia</td>
+        <td class="table-info">Acura</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button type="button" class="btn btn-outline-primary ">D</button>
+    <button type="button" class="btn btn-outline-primary ">E</button>
+    <button type="button" class="btn btn-outline-primary">V</button>
+    <button type="button" class="btn btn-outline-primary">A</button>
+    <button type="button" class="btn btn-outline-primary">N</button>
+    <button type="button" class="btn btn-outline-primary">A</button>
+  </div>
+  <br>
+
+  <div class="btn-toolbar" roles="toolbar" aria-label="Different button groups">
+    <div class="btn-group me-3" role="group" aria-label="success button group">
+      <button type="button" class="btn btn-success">D</button>
+      <button type="button" class="btn btn-success">E</button>
+      <button type="button" class="btn btn-success">V</button>
+    </div>
+    <div class="btn-group me-3" role="group" aria-label="warning button group">
+      <button type="button" class="btn btn-warning">A</button>
+      <button type="button" class="btn btn-warning">N</button>
+    </div>
+    <div class="btn-group me-3" role="group" aria-label="danger button group">
+      <button type="button" class="btn btn-danger">A</button>
+    </div>
+  </div>
+  <br>
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary active dropdown-toggle " data-bs-toggle="dropdown"
+      aria-expanded="true">Select Button</button>
+    <div class="dropdown-menu ">
+      <a class="dropdown-item " href="plane.html">Plane Page</a>
+      <a class="dropdown-item " href="train.html">Train page</a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We want this to accept an email address</div>
+    </div>
+
     <div class="form-group">
       <label for="Animal" class="form-label">Enter your Animal</label>
-      <input type="text" class="form-control" >
+      <input type="text" class="form-control">
     </div>
     <br>
     <div class="form-check">
       <input type="checkbox" class="form-check-input">
-        <label class="form-check-label">Sign up for newsletter? </label>
+      <label class="form-check-label">Sign up for newsletter? </label>
     </div>
     <br>
     <div>
-        <button type="submit" class="btn btn-primary ">Submit</button>
+      <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We want this to accept an email address</div>
+    </div>
+
+    <div class="form-group">
+      <label for="Animal" class="form-label">Enter your Animal</label>
+      <input type="text" class="form-control">
+    </div>
+    <br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input">
+      <label class="form-check-label">Sign up for newsletter? </label>
+    </div>
+    <br>
+    <div>
+      <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+    <br>
+    <br>
+    <div class="card-group">
+      <div class="card" style="width: 18rem;">
+        <img src="Alpaca.jpg" alt="Alpaca" height="380">
+        <div class="card-body">
+          <h5 class="card-title">Alpaca</h5>
+          <p class="card-text">Adorable, docile and soft, alpacas are prized as pets and cattle around the world. There are no wild alpacas. Alpacas are domesticated versions of vicuñas, South American ruminants that live high in the Andes. Alpacas are related to llamas, which are domesticated versions of another wild Andean ruminant, the guanaco. While llamas are used as pack animals, alpacas are raised mainly for their soft wool. </p>
+
+            <p>Guanacos and vicuñas are found throughout the Andes Mountains. They are descended from camelids that developed in North America and migrated to South America 3 million years ago, according to Phil Switzer, an alpaca breeder based in Colorado. These animals evolved into guanacos and vicuñas, and about 6,000 years ago, people in the Andes began to domesticate them. There are two breeds of alpaca, the Huacaya and the Suri. Huacaya alpacas are more common, according to Switzer.</p>
+          <a href="https://www.livescience.com/52668-alpacas.html"
+            class="btn btn-primary">About Alpaca</a>
+        </div>
       </div>
-    </form>
+      <div class="card" style="width: 18rem;">
+        <img src="Albatross.jpg" alt="Albatross">
+        <div class="card-body">
+          <h5 class="card-title">Albatross</h5>
+          <p class="card-text">An albatross is a large, magnificent seabird capable of soaring incredible distances without rest. Long viewed with superstitious awe by sailors, they spend most of their time gliding over the open ocean. Most people around the world rarely get a glimpse of these unique birds, since when they do visit dry land, it's often only to breed on remote islands before going back out to sea.</p>
+          <p>Despite their elusiveness, however, most albatross species are now threatened with extinction due to human activities. In hopes of raising their profile and illustrating why we're lucky to share the planet with them, here are a few things you may not know about the amazing albatross.</p>
+          <a href="https://www.treehugger.com/albatross-facts-5073421" class="btn btn-primary">About Albatross</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="Newt.jpg" alt="Newt" height="380">
+        <div class="card-body">
+          <h5 class="card-title">Newt</h5>
+          <p class="card-text">Newt, (family Salamandridae), generic name used to describe several partially terrestrial salamanders. The family is divided informally into newts and “true salamanders” (that is, all non-newt species within Salamandridae regardless of genus). Since there is little distinction between the two groups, this article considers the family as a whole.</p>
+          <p>Salamandridae is second in diversity to the lungless salamanders (family Plethodontidae); the family is made up of 15 genera of true salamanders and over 50 species of newts. Salamandridae has a spotty geographic distribution throughout the Northern Hemisphere and occurs from western Europe to the Urals, from southern China to Japan, on the west coast of North America, and east of the Rocky Mountains in the eastern United States. Salamandrids range from moderately slender to robust-bodied forms. All have well-developed limbs and tails. They are usually less than 20 cm (8 inches) in total length, and many are less than 10 cm (4 inches). Newts have rough skin, and the skin of many salamanders is rugose (wrinkled).</p>
+          <a href="https://www.britannica.com/animal/newt" class="btn btn-primary">About Newt</a>
+        </div>
+      </div>
+    </div>
 
 </body>
+
 </html>
